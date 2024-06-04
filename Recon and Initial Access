@@ -9,3 +9,14 @@ During technical recon, you’re looking for systems such as public-facing websi
 particularly defensive ones - web proxies, email gateways, firewalls, antivirus etc.
 
 Gathering either type of information can be done passively or actively.
+
+Tools: whois, dig, dnscan, google dorking, SOCMINT
+
+#PASSWORD SPRAYING 
+Password spraying is an effective technique for discovering weak passwords that users are notorious for using. 
+Patterns such as MonthYear (August2019), SeasonYear (Summer2019) and DayDate (Tuesday6) are very common.
+- Be cautious of localisations, e.g. Autumn vs Fall.
+
+Two excellent tools for password spraying against Office 365 and Exchange are MailSniper and SprayingToolkit. 
+
+1. Enumerate the NetBIOS name of the target domain with Invoke-DomainHarvestOWA.
