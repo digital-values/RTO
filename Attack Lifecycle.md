@@ -67,7 +67,9 @@ Post-engagement wash-up meetings and other follow-up meetings should also be con
 
 
 
+*POST ENGAGEMENT*
 
+There is an excellent set of document templates available on https://redteam.guide.
 
 
 
