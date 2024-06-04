@@ -1,0 +1,11 @@
+*Reconnaissance*
+
+There are two main facets of recon - organisational and technical.
+
+During organisational recon, you’re focused on collecting information about the organisation.  
+This can include the people who work there (names, jobs and skills), the organisational structure, site locations and business relationships.
+
+During technical recon, you’re looking for systems such as public-facing websites, mail servers, remote access solutions, and any vendors or products in use, 
+particularly defensive ones - web proxies, email gateways, firewalls, antivirus etc.
+
+Gathering either type of information can be done passively or actively.
