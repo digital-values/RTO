@@ -77,6 +77,14 @@ add to macros, change the author and save as a ".doc" 97-03 document best compro
 
 We then want to upload this file to the team server as well.  Go to Site Management > Host File and select your document.
 
+Send the document to the "co-worker" of the compromised host. 
+
+Pray that the "co-worker" opens the document and enables macros.
+
+http beacon will appear
+
+
+
 
 
 
