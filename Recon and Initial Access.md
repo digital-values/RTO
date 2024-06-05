@@ -31,7 +31,55 @@ Two excellent tools for password spraying against Office 365 and Exchange are Ma
 
 Open a browser on Attacker Desktop, navigate to https://mail.cyberbotic.io and login with the obtained credentials.
 
-Open a browser on Attacker Desktop, navigate to https://mail.cyberbotic.io and login with the obtained credentials.
+#### Initial Access Payloads 
+
+
+Sending a payload to the phished user(s) is a direct way to gain a foothold, since it will be executed on their system.  There are broadly two options for delivering a payload.
+
+    Send a URL where a payload can be downloaded.
+    Attach the payload to the phishing email.
+
+Reading Mark of The Web (MOTW) with PowerShell:
+
+PS C:\Users\bfarmer\Downloads> gc .\test.txt -Stream Zone.Identifier
+
+The possible zones are:
+
+    0 => Local computer
+    1 => Local intranet
+    2 => Trusted sites
+    3 => Internet
+    4 => Restricted sites
+
+Files that are emailed "internally" via a compromised Exchange mailbox are not tagged with a Zone Identifier.
+
+
+##### VBA Macros 
+
+Instructions to re-arm Office license
+- Run a Command Prompt as a local admin
+-  cd C:\Program Files\Microsoft Office\Office16
+- cscript ospp.vbs /rearm
+
+Basic Shell:
+
+Sub AutoOpen()
+
+  Dim Shell As Object
+  Set Shell = CreateObject("wscript.shell")
+  Shell.Run "notepad"
+
+End Sub
+
+"wscript" is the Windows Script Host, which is designed for automation.  The "shell" method provides the ability to execute OS commands.  To test the above code, use the play/pause/stop buttons.
+
+add to macros, change the author and save as a ".doc" 97-03 document best compromise method 
+
+We then want to upload this file to the team server as well.  Go to Site Management > Host File and select your document.
+
+
+
+
 
 
 
