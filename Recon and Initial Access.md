@@ -98,6 +98,16 @@ using a remote template injection will allow you to save your payload as a templ
 
 
 
+Some organisations (particularly those with an internal PKI) will perform SSL offloading on HTTPS web traffic.  This allows the proxy to decrypt incoming HTTPS traffic and inspect the plaintext HTTP.  The traffic is then re-encrypted with an internally trusted private key before being forwarded to the client.
+
+This means that even your HTTPS C2 traffic can be inspected.  Some C2 tools (such as Covenant) allow you to configure certificate pinning on the implants which would effectively prevent this from taking place, but at the potential cost of the proxy blocking the traffic entirely.
+
+This may go without saying - but if a web proxy has the ability to read and inspect HTTP(S) traffic, then it can also scan for known malicious content.  However, this does come with a performance penalty.  Another common feature is to block the download and/or upload of particular file types, such as .exe, .dll, .ps1, etc, which may impact your ability to deliver payloads.
+
+Many organisations will also require a form of authentication before a client is allowed use a proxy.  This could be anything from basic auth with a local database, Radius or Active Directory integration.  AD integration is a very common and popular choice as it provides single sign-on via NTLM, Kerberos and LDAP(S).
+
+This often means that a principal has to be in a "trusted" domain group before they can use the proxy, such Domain Users or a custom group entirely.  This does often exclude computer accounts, which means HTTP(S) Beacons running as local SYSTEM accounts cannot work.
+
 
 
 
