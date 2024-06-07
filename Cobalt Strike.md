@@ -136,3 +136,7 @@ We will now be able to connect from the Cobalt Strike client as soon as the VMs 
 
 
 
+
+
+
+
