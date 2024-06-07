@@ -83,6 +83,18 @@ Pray that the "co-worker" opens the document and enables macros.
 
 http beacon will appear
 
+##### Remote Template Injection 
+
+using a remote template injection will allow you to save your payload as a template and modify it to send as a ".docx" 
+
+1. Open a new blank word document and insert whatever VBA Macro payload you want
+   1b. Save the template as a 97-2003 ".dot" in your payloads drive
+2. host the file on your cobalt strike web management server or web server
+   2b. host it on www.yourbaddomain.com/yourmalicioustemplate.dot
+3. Open a new custom office template from "Documents/Custom Office Template/Blank Template"
+   3b. add whatever words and save it as a "docx"
+4. Send it from your compromised target to internal members
+5. Beacon
 
 
 
