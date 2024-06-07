@@ -44,6 +44,34 @@
 ##### If there are names here that we didn't find during initial recon, we can go back and do another round of spraying against them.
 
 
+# Host Recon 
+**Technique: Recon**
+
+## SeatBelt 
+
+https://github.com/GhostPack/Seatbelt
+
+Checks security configs once you have a beacon on a compromised host
+
+1. beacon> execute-assembly C:\Tools\Seatbelt\Seatbelt\bin\Release\Seatbelt.exe -group=system
+
+One thing to note from this output is that there's a web proxy in place - squid.dev.cyberbotic.io.  This has implications for HTTP(S) C2 for a variety of reasons.
+
+Web Categorisation
+
+Domain names are categorised by vendors so that they can be lumped together for filtering purposes.  This is useful so that everything categorised as "gambling", "drugs", "violence", or "social media", etc can be blocked outright.  If the domain being used for part of your engagement ends up in a blocked category, it becomes effectively useless.
+
+Two strategies for tackling this issue include:
+
+    Obtaining a domain that is already in a desirable category.
+    Requesting a change of category for a domain.
+
+
+https://sitereview.bluecoat.com/#/  <<< checks site reps and categories 
+
+https://github.com/mdsecactivebreach/Chameleon  <<< helps categorise c2 domains for red teams 
+
+https://github.com/cobbr/Covenant <<< allows red teams to pin their c2 certs 
 
 
 
