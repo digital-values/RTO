@@ -45,7 +45,6 @@
 
 
 # Host Recon 
-**Technique: Recon**
 
 ## SeatBelt 
 
@@ -66,12 +65,21 @@ Two strategies for tackling this issue include:
     Obtaining a domain that is already in a desirable category.
     Requesting a change of category for a domain.
 
+# Persistence 
+
+https://github.com/mandiant/SharPersist 
+
+
+# Misc Tooling 
+
 
 https://sitereview.bluecoat.com/#/  <<< checks site reps and categories 
 
 https://github.com/mdsecactivebreach/Chameleon  <<< helps categorise c2 domains for red teams 
 
 https://github.com/cobbr/Covenant <<< allows red teams to pin their c2 certs 
+
+
 
 
 
