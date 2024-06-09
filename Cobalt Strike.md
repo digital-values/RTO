@@ -130,9 +130,9 @@ The service should be active/running and you will see the typical console output
 We will now be able to connect from the Cobalt Strike client as soon as the VMs boot up.
 
 
+##### Host Recon 
 
-
-
+using standards commands for beaconing in Cobalt Strike 
 
 
 
