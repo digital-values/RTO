@@ -113,9 +113,12 @@ This often means that a principal has to be in a "trusted" domain group before t
 
 HTML smuggling is a technique that uses JavaScript to hide files from content filters.  If you send a phishing email with a download link, the HTML may look something like:
 
-*<a href="http://attacker.com/file.doc">Download Me</a>*
+* href="http://attacker.com/file.doc">Download Me *
 
 Email and web scanners are capable of parsing these out and taking some action.  They may be removed entirely, or the URL content fetched and scanned by an AV sandbox.  HTML smuggling allows us to get around this by embedding the payload into the HTML source code and using JavaScript to construct URLs by the browser at runtime.
+
+
+
 
 
 
