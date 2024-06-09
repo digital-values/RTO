@@ -109,6 +109,17 @@ Many organisations will also require a form of authentication before a client is
 This often means that a principal has to be in a "trusted" domain group before they can use the proxy, such Domain Users or a custom group entirely.  This does often exclude computer accounts, which means HTTP(S) Beacons running as local SYSTEM accounts cannot work.
 
 
+##### HTML Smuggling 
+
+HTML smuggling is a technique that uses JavaScript to hide files from content filters.  If you send a phishing email with a download link, the HTML may look something like:
+
+*<a href="http://attacker.com/file.doc">Download Me</a>*
+
+Email and web scanners are capable of parsing these out and taking some action.  They may be removed entirely, or the URL content fetched and scanned by an AV sandbox.  HTML smuggling allows us to get around this by embedding the payload into the HTML source code and using JavaScript to construct URLs by the browser at runtime.
+
+
+
+
 
 
 
