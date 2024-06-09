@@ -12,7 +12,7 @@ Gathering either type of information can be done passively or actively.
 
 Tools: whois, dig, dnscan, google dorking, SOCMINT
 
-### PASSWORD SPRAYING 
+## Password Spraying
 Password spraying is an effective technique for discovering weak passwords that users are notorious for using. 
 Patterns such as MonthYear (August2019), SeasonYear (Summer2019) and DayDate (Tuesday6) are very common.
 - Be cautious of localisations, e.g. Autumn vs Fall.
@@ -27,11 +27,9 @@ Two excellent tools for password spraying against Office 365 and Exchange are Ma
 6. We can do further actions using MailSniper with valid credentials, such as downloading the global address list.
 7. If there are names here that we didn't find during initial recon, we can go back and do another round of spraying against them.
 
-### Internal Phishing 
-
 Open a browser on Attacker Desktop, navigate to https://mail.cyberbotic.io and login with the obtained credentials.
 
-#### Initial Access Payloads 
+## Initial Access Payloads / Internal Phishing
 
 
 Sending a payload to the phished user(s) is a direct way to gain a foothold, since it will be executed on their system.  There are broadly two options for delivering a payload.
@@ -54,7 +52,7 @@ The possible zones are:
 Files that are emailed "internally" via a compromised Exchange mailbox are not tagged with a Zone Identifier.
 
 
-#### VBA Macros 
+### VBA Macros 
 
 Instructions to re-arm Office license
 - Run a Command Prompt as a local admin
@@ -83,7 +81,7 @@ Pray that the "co-worker" opens the document and enables macros.
 
 http beacon will appear
 
-#### Remote Template Injection 
+### Remote Template Injection 
 
 using a remote template injection will allow you to save your payload as a template and modify it to send as a ".docx" 
 
@@ -109,7 +107,7 @@ Many organisations will also require a form of authentication before a client is
 This often means that a principal has to be in a "trusted" domain group before they can use the proxy, such Domain Users or a custom group entirely.  This does often exclude computer accounts, which means HTTP(S) Beacons running as local SYSTEM accounts cannot work.
 
 
-#### HTML Smuggling 
+### HTML Smuggling 
 
 HTML smuggling is a technique that uses JavaScript to hide files from content filters.  If you send a phishing email with a download link, the HTML may look something like:
 
@@ -118,6 +116,10 @@ HTML smuggling is a technique that uses JavaScript to hide files from content fi
 Email and web scanners are capable of parsing these out and taking some action.  They may be removed entirely, or the URL content fetched and scanned by an AV sandbox.  HTML smuggling allows us to get around this by embedding the payload into the HTML source code and using JavaScript to construct URLs by the browser at runtime.
 
 ## Host Recon 
+
+List processes, use "Seatbelt" tool to gather system information, take screenshots, use the keylogger, net logons for user sessions 
+
+
 
 
 
