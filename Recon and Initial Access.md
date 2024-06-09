@@ -54,7 +54,7 @@ The possible zones are:
 Files that are emailed "internally" via a compromised Exchange mailbox are not tagged with a Zone Identifier.
 
 
-##### VBA Macros 
+#### VBA Macros 
 
 Instructions to re-arm Office license
 - Run a Command Prompt as a local admin
@@ -83,7 +83,7 @@ Pray that the "co-worker" opens the document and enables macros.
 
 http beacon will appear
 
-##### Remote Template Injection 
+#### Remote Template Injection 
 
 using a remote template injection will allow you to save your payload as a template and modify it to send as a ".docx" 
 
@@ -109,7 +109,7 @@ Many organisations will also require a form of authentication before a client is
 This often means that a principal has to be in a "trusted" domain group before they can use the proxy, such Domain Users or a custom group entirely.  This does often exclude computer accounts, which means HTTP(S) Beacons running as local SYSTEM accounts cannot work.
 
 
-##### HTML Smuggling 
+#### HTML Smuggling 
 
 HTML smuggling is a technique that uses JavaScript to hide files from content filters.  If you send a phishing email with a download link, the HTML may look something like:
 
@@ -117,6 +117,7 @@ HTML smuggling is a technique that uses JavaScript to hide files from content fi
 
 Email and web scanners are capable of parsing these out and taking some action.  They may be removed entirely, or the URL content fetched and scanned by an AV sandbox.  HTML smuggling allows us to get around this by embedding the payload into the HTML source code and using JavaScript to construct URLs by the browser at runtime.
 
+## Host Recon 
 
 
 
